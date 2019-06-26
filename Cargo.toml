@@ -1,0 +1,19 @@
+[package]
+name = "commithash_bruteforcer"
+version = "0.0.1"
+authors = ["rnitta <attinyes@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rust-crypto = "^0.2"
+clap = "^2.33"
+regex = "^1.1.7"
+
+[profile.release]
+opt-level = 3
+codegen-units = 1
+debug = false
+rpath = false
+lto = false
+debug-assertions = false
+overflow-checks = false
